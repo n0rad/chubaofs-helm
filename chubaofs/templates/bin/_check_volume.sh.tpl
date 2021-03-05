@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# set -ex
+set -x
 GET_CLUSTER_URL="http://$CBFS_MASTER_SERVICE_PORT/admin/getCluster"
 CREATE_VOL_URL="http://$CBFS_MASTER_SERVICE_PORT/admin/createVol?name=$CBFS_CLIENT_VOL_NAME&capacity=20&owner=$CBFS_CLIENT_OWNER&mpCount=3"
 SERVICE_NOT_UNAVAILABLE=99999
